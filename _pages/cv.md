@@ -9,4 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-You can check my cv (updated on February, 2020) by clicking [here](https://drive.google.com/file/d/1rJpqB-88UbKvC7wnagwtxyuZQMuBB1BM/view?usp=sharing)
+[Click to check my up-to-date-cv](https://drive.google.com/file/d/1rJpqB-88UbKvC7wnagwtxyuZQMuBB1BM/view?usp=sharing)
