@@ -12,7 +12,7 @@ Welcome to my not so awfully hard coded website! Sadly, this is a site still und
 
 I'm a Research Assistant at Universidad del Pacifico with a strong interest on Behavioral and Experimental Economics, Computational Economics and Impact Evaluation of Public Policies.
 
-## [Research](research)
+## [Publications](publications)
 
 ## [Teaching](teaching)
 
