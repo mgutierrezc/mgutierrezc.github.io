@@ -9,6 +9,5 @@ redirect_from:
 
 {% include base_path %}
 
+Last time updated: March 23th, 2020
 <iframe src="https://drive.google.com/file/d/1epYdHk1FGx59uuU8vnANvD0HvQ6zc3Zn/preview" width="640" height="480"></iframe>
-
-[Click to check my up-to-date-cv](https://drive.google.com/file/d/1epYdHk1FGx59uuU8vnANvD0HvQ6zc3Zn/view?usp=sharing)
