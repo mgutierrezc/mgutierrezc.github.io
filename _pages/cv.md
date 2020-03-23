@@ -9,4 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+<iframe src="https://drive.google.com/file/d/1epYdHk1FGx59uuU8vnANvD0HvQ6zc3Zn/view?usp=sharing">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+
 [Click to check my up-to-date-cv](https://drive.google.com/file/d/1epYdHk1FGx59uuU8vnANvD0HvQ6zc3Zn/view?usp=sharing)
