@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-12T05:37:18-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marco Gutierrez</title><subtitle>Marco's academic page</subtitle><author><name>Marco Gutierrez</name><email>ma.gutierrezch@up.edu.pe</email></author><entry><title type="html">Portable Experimental Economics Lab</title><link href="http://localhost:4000/peel/" rel="alternate" type="text/html" title="Portable Experimental Economics Lab" /><published>2020-01-02T00:00:00-05:00</published><updated>2020-01-02T00:00:00-05:00</updated><id>http://localhost:4000/peel</id><content type="html" xml:base="http://localhost:4000/peel/">&lt;h2 id=&quot;about-the-project&quot;&gt;About the Project&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Author:&lt;/strong&gt; Marco Gutierrez&lt;/p&gt;
+
+&lt;p&gt;Found my repo &lt;a href=&quot;https://github.com/mgutierrezc/Econ_Lab_Files&quot; target=&quot;blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The main purpose of this repo is to make public some of the basic software tools in order to set up a lab in experimental economics.
+Here you will be able to find some files neccesary to:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Literature to understand the basics of lab experimental econ&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Control the computers of an Ubuntu based lab&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create experimental economic projects in oTree&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;literature-to-understand-the-basics-of-lab-experimental-economics&quot;&gt;Literature to understand the basics of lab experimental economics&lt;/h2&gt;
+&lt;p&gt;Here you will find literature about&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Types of Experiments&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Induced Value Theory&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Game Theory&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;scripts-for-controling-the-computers-of-an-ubuntu-based-lab&quot;&gt;Scripts for Controling the computers of an Ubuntu based lab&lt;/h2&gt;
+&lt;p&gt;Many of the stuff needs to be done with shell scripts.&lt;/p&gt;
+
+&lt;h2 id=&quot;create-experimental-economic-projects-in-otree&quot;&gt;Create experimental economic projects in oTree&lt;/h2&gt;
+&lt;p&gt;oTree is the main programming package used for the experimental economics labs in Perú, so that’s why Ztree won’t be seen anywhere over here. In order to use the tools in the repo and assuming you have installed some Python version as well as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip&lt;/code&gt;, run the following commands&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  pip install virtualenv
+  pip install otree
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In the otree_environments, you’ll find 2 virtual environments to work in the two main versions of otree&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Old oTree - otree 2.2.x (Python 3.6)&lt;/li&gt;
+  &lt;li&gt;New oTree - otree &amp;gt;= 2.3.1 (Python 3.7)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;contact&quot;&gt;Contact&lt;/h2&gt;
+&lt;p&gt;This is an ongoing project, so if you want to support by adding an extra section/folder/file or just want to make a suggestion, please send me an email: &lt;a href=&quot;mailto:ma.gutierrezch@up.edu.pe&quot;&gt;ma.gutierrezch@up.edu.pe&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Forthcoming:&lt;/strong&gt; Guides to program basic shell scripts and to use the terminal in Ubuntu&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; There are some scripts written here that aren’t from my authorship. The programmer names should be in there. 
+If you haven’t find it, please let me now in order to add him.&lt;/p&gt;</content><author><name>Marco Gutierrez</name><email>ma.gutierrezch@up.edu.pe</email></author><category term="experimental economics" /><category term="behavioral economics" /><category term="python" /><category term="ubuntu" /><summary type="html">oTree based portable lab for experimental economics designs</summary></entry></feed>
