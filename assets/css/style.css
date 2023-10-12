@@ -123,11 +123,6 @@
 
 /* body-color */
 
-head {
-  background-image: url(../../assets/img/Flashy Polygon.gif.png);
-  background-size: cover;
-}
-
 body {
   color: #333;
   font-size: 18px;
@@ -140,7 +135,7 @@ body {
 /* main a -- links */
 
 /* a {
-  color: #2d7397;
+  color: #191919;
 } */
 
 a {
@@ -553,7 +548,7 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  color: #2d7397 !important;
+  color: #1aadb8c0 !important;
 }
 
 /* .teal-text {
@@ -563,7 +558,7 @@ small {
 /* .teal */
 
 .teal {
-  background-color: #2d7397 !important;
+  background-color: #191919 !important;
 }
 
 /* .teal {
@@ -606,7 +601,7 @@ small {
     position: absolute;
   }
   nav a.button-collapse, nav a.button-collapse i {
-    color: #2d7397;
+    color: #191919;
     height: 56px;
     line-height: 56px;
   }
