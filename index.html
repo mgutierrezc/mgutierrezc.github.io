@@ -491,43 +491,45 @@
     <!-- Fourth Section: Projects -->
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text teal">Portfolio</h3>
+      <div class="container flow-text">
+        <p>          
+          Click on any of the cards to obtain access to each project description and repository/further documentation
+        </p>
+      </div>
       <div class="container">
         <div class="row">
 
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Gender Equality on District Elections in Peru" src="/assets/img/igualdad_genero.jpg" style="height: 100%; width: 100%" class="activator" />
+                <img alt="Gender Equality on District Elections in Peru" src="/assets/img/project_logos/biased justice.png" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Gender Equality in District Elections in Peru<i
+                <span class="card-title activator teal-text hoverline">Measuring gender biases from judicial cases<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  A visual and descriptive analysis about the gender equality in district elections, for mayors and aldermen, in Peru. 
+                  NLP Python pipeline to measure of judges' gender biases in Peru
                 </p>
               </div>
               <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
+                <span class="card-title grey-text"><small>Description</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li><b>Tools:</b> R studio, RMarkdown.</li>
-                  <li>To see final report open the html on the link or check the github repo</li>
-                  <li>Data about the gender equality in district elections.</li>
+                  <li>Using public judicial cases data, the pipeline</li>
+                  <ul>
+                    <li>Creates and parses a corpus per judge.</li>
+                    <li>Creates word embeddings per judge.</li>
+                    <li>Measures each judges gender biases.</li>
+                  </ul>
+                  <li>A more thorough explanation can be found on the readme from the GitHub repo<br></li>
 
+                  <li><b>Tools:</b> Python, Bash.</li>
                 </ul>
                 <div class="card-action">
-                  <a aria-label="Visit " href="https://andrelama.github.io/r_gender/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/andrelama/r_gender"
+                  <a aria-label="Visit the GitHub repo for project" href="https://github.com/mgutierrezc/judicial_biases"
                     target="_blank" data-position="top" data-tooltip="View Source"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
-
-
                 </div>
               </div>
             </div>
