@@ -1,843 +1,208 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="data:image/x-icon;base64, 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
+    JQAAAABJRU5ErkJggg==" rel="icon" type="image/x-icon" />
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
-  <!-- End Google Tag Manager -->
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles-->
-  <link rel="stylesheet" href="/assets/css/style.css" />
-  <title> Marco Gutierrez | Economist/Data Scientist </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Gutierrez Chavez</title>
+    <style>
+        /* Import Google Font "Lora" */
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-126939217-2');
-  </script>
-
-  <!-- Open Graph-->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Marco Gutierrez | Economist/Data Scientist" />
-  <meta property="og:description" content="Economist/Data Scientist" />
-  <meta property="og:url" content="https://mgutierrezc.github.io/" />
-  <meta property="og:site_name" content="Marco Gutierrez | Economist/Data Scientist" />
-  <meta property="article:publisher" content="https://mgutierrezc.github.io/" />
-  <meta property="og:image" content="https://mgutierrezc.github.io/examples/preview.JPG" />
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@andre_lama" />
-  <meta name="twitter:title" content="Coder | Technofreak | Explorer | Minimalist | Humane" />
-  <meta name="twitter:description" content="Economist" />
-  <meta name="twitter:url" content="https://twitter.com/varad_bhogayata" />
-  <meta name="author" content="Marco Gutierrez" />
-  <meta name="description" content="Economist with interest for quantitative and qualitative analysis in social sciences and coding." />
-  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="robots" content="index, follow" />
-  <!-- Google Site Verification for indexing -->
-  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center; /* Center align body content vertically */
+            text-align: center; /* Center align text within body */
+        }
+        header {
+            position: fixed; /* Fix the header to the top */
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px; /* Adjusted padding */
+            background-color: white;
+            width: 100%;
+            box-sizing: border-box; /* Ensure padding is included in width */
+            z-index: 1000; /* Ensure header is on top */
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 40px; /* Adjust the size of the GIF as needed */
+        }
+        .social-icons {
+            display: flex;
+            align-items: center;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove padding */
+        }
+        .social-icons a {
+            margin: 0; /* Remove margin */
+            color: #003366; /* Dark blue color */
+            font-size: 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .social-icons a:hover {
+            background-color: #f0f0f0;
+        }
+        .content {
+            padding: 20px;
+            margin-top: 80px; /* Space for fixed header */
+            max-width: 800px; /* Adjust as needed */
+            margin-left: auto; /* Center content horizontally */
+            margin-right: auto; /* Center content horizontally */
+            text-align: left; /* Left-align text within centered content */
+        }
+        .description {
+            font-family: 'Lora', serif;
+            font-size: 18px;
+            color: #003366; /* Dark blue color */
+        }
+        .description h1 {
+            font-family: 'Lora', serif; /* Consistent font */
+            font-size: 36px; /* Adjusted size */
+            font-weight: 300; /* Same font weight as Experience */
+            color: #003366; /* Dark blue color */
+            margin: 0;
+            margin-bottom: 20px; /* Space below the heading */
+        }
+        .section {
+            border-top: 1px solid #e0e0e0; /* Subtle gray line */
+            padding: 20px 0; /* White vertical space between sections */
+            margin-top: 40px; /* Space above the section */
+        }
+        .section h2 {
+            font-family: 'Lora', serif;
+            font-size: 28px; /* Same font size as name */
+            font-weight: 300; /* Less bolding */
+            color: #003366; /* Dark blue color */
+            margin: 0;
+            margin-bottom: 20px; /* Space below the heading */
+        }
+        .experience-entry, .education-entry {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; /* Space between entries */
+        }
+        .experience-entry img, .education-entry img {
+            width: 80px; /* Width of image */
+            height: 80px; /* Height of image */
+            object-fit: scale-down; /* Ensure image covers the area */
+            /* image-rendering: crisp-edges; Improve image rendering */
+            margin-right: 20px; /* Space between image and text */
+        }
+        .experience-entry div, .education-entry div {
+            display: flex;
+            flex-direction: column;
+        }
+        .experience-entry .job-title, .education-entry .degree-title {
+            font-weight: bold; /* Bold job title or degree title */
+        }
+        .experience-entry .description, .education-entry .description {
+            margin: 5px 0; /* Space between lines of text */
+        }
+        .experience-entry .date, .education-entry .date {
+            font-style: italic; /* Italicize date */
+        }
+    </style>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <br>
-    <br>
-    <ul class="side-nav fixed section table-of-contents" style="margin: 6px 0;">
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="/assets/img/profile_photos/graph_logo_blue.gif" class=" img-responsive profile-pic" alt="avatar">
-        </a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Portfolio</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-      
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- 
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        -->
-        <a aria-label="Open Marco's resume in a new tab" href="https://drive.google.com/file/d/15_5YlUIpWa-qfIv1hsibqYB02xQw1Zt-/view?usp=sharing" target="_blank"
-        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Marco
-        Gutierrez</a><span class="black-text">Economist and Data Scientist</span>
+    <header>
+        <div class="logo">
+            <img src="assets\img\profile_photos\graph_logo_blue.gif" alt="Logo">
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com/mgutierrezc" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mgutierrez224/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:sgw3fy@virginia.edu"><i class="fas fa-envelope"></i></a>
+        </div>
+    </header>
+    <div class="content">
+        <div class="description">
+            <h1>Marco Gutierrez Chavez</h1>
+            <p>Ph.D. student in Data Science at the University of Virginia. Interested in Natural Language Processing,
+                Language-to-Vision models and Computer Vision.</p>
+        </div>
+        <div class="section experience">
+            <h2>Main Experience</h2>
+            <div class="experience-entry">
+                <img src="assets\img\work_logos\columbia university small logo.png" alt="Experience 1">
+                <div>
+                    <div class="job-title">Columbia University, Pre-Doctoral Fellow</div>
+                    <div class="description">Natural Language Processing, Causal Inference, and Project Management.</div>
+                    <div class="date">October 2022 - July 2024</div>
+                </div>
+            </div>
+            <div class="experience-entry">
+                <img src="assets\img\work_logos\world bank small logo.jpg" alt="Experience 2">
+                <div>
+                    <div class="job-title">World Bank, Research Consultant</div>
+                    <div class="description">Natural Language Processing, Causal Inference.</div>
+                    <div class="date">February 2022 - September 2022</div>
+                </div>
+            </div>
+            <!-- Add more experience entries as needed -->
+        </div>
     </div>
-  </nav>
-
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Portfolio</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open Marco's Resume in a new tab"
-          href="https://drive.google.com/file/d/15_5YlUIpWa-qfIv1hsibqYB02xQw1Zt-/view?usp=sharing" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay" style="background-image: url('/assets/img/profile_photos/flashy polygon.gif'); background-size: cover;"></div>
-      <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm Marco Gutierrez.</h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5>Pre-Doctoral fellow working on research at the intersection of data science, behavioral and development economics.</h5>
-            </div>
-            <div class="social">
-              <a href="https://www.linkedin.com/in/mgutierrez224/" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="https://github.com/mgutierrezc/" target="_blank">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
-
-
-            </div>
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text">
-        <p>          
-          I am a Peruvian economist working as a Pre-Doctoral Fellow in Economics at Columbia University in the City of New York. My interests are Behavioral and Experimental
-          Economics, Development Economics, Natural Language Processing, and Computer Vision.
-        </p>
-        <p>
-          My experience includes working with Python, Bash, Amazon Web Services (EC2, RDS, MTurk), Heroku, managing Ubuntu servers, and using Google Cloud APIs.
-          I'm also well-versed in algorithmics, time and memory efficiency, and object-oriented programming. 
-        </p>
-        <p>
-          Currently looking for a Ph.D./MSc that allows me to do research at the intersection of economics and data science.
-        </p>
-      </div>
-    </section>
-
-
-    <!-- Third Section: Experience -->
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
-      <div class="container">
-
-        <!-- Pre-doc Experience -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://econ.columbia.edu/per/pre-doc-research-staff/" target="_blank"><img alt="Columbia Logo"
-                    src="/assets/img/work_logos/columbia university small logo.png" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://econ.columbia.edu/per/pre-doc-research-staff/" target="_blank"
-                      class="teal-text hoverline">Columbia University</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2"> Pre-Doctoral Fellow </div>
-            <ul>
-              <li>
-                Supported the development of an algorithm to estimate corruption from textual data.
-              </li>
-              <li>
-                Development of NLP software to parse and process CSR documents from India.
-              </li>
-              <li>
-                <b>Skills:</b> Natural language processing, development economics, PDF parsing, high-performance computing, project management.
-              </li>
-              <li>
-                <b>Tools:</b> Python, Bash, AWS (EC2 and RDS), Google Cloud, Ubuntu, Stata.
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span> Oct 2022 - Current | New York, United States </span>
-          </div>
-        </div>
-
-        <!-- Consultant Columbia Experience -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://econ.columbia.edu/per/pre-doc-research-staff/" target="_blank"><img alt="Columbia Logo"
-                    src="/assets/img/work_logos/columbia university small logo.png" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://econ.columbia.edu/per/pre-doc-research-staff/" target="_blank"
-                      class="teal-text hoverline">Columbia University</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2"> Research Consultant </div>
-            <ul>
-              <li>
-                Managed a team of economists and data scientists on two impact evaluations with the Peruvian government.
-              </li>
-              <li>
-                Supported the development of an algorithm to estimate corruption from textual data.
-              </li>
-              <li>
-                <b>Skills:</b> Project management, behavioral and development economics, natural language processing, causal inference.
-              </li>
-              <li>
-                <b>Tools:</b> Python, AWS (EC2 and RDS), Google Cloud APIs, Wrike, Stata.
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span> July 2021 - Sep 2022 | Lima, Peru </span>
-          </div>
-        </div>
-
-        <!-- Consultant World Bank Experience -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.worldbank.org/en/research/dime/overview" target="_blank"><img alt="World Bank Logo"
-                    src="/assets/img/work_logos/world bank small logo.jpg" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.worldbank.org/en/research/dime/overview" target="_blank"
-                      class="teal-text hoverline">World Bank</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2"> Research Consultant </div>
-            <ul>
-              <li>
-                Developed a pipeline to parse/clean textual data, and train/test NLP models using Peruvian judicial cases to measure gender biases and
-                supervised the development of a Peruvian judicial cases scraper.
-              </li>
-              <li>
-                Developed and supported the development of several web applications for behavioral economics projects for Peru, Pakistan and internal 
-                projects.
-              </li>
-              <li>
-                Supported on the econometric analysis of data from impact evaluations in Peru.
-              </li>
-              <li>
-                <b>Skills:</b> Natural language processing, behavioral and development economics, backend development, causal inference.
-              </li>
-              <li>
-                <b>Tools:</b> Python, HTML5, Javascript, Slurm, Stata.
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span> July 2021 - Sep 2022 | Lima, Peru </span>
-          </div>
-        </div>
-        
-        <!-- Independent Work UCSC/Brown Experience -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://kmlv.github.io/" target="_blank"><img alt="Independent Work Logo"
-                    src="/assets/img/work_logos/independent consultant logo.png" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://kmlv.github.io/" target="_blank"
-                      class="teal-text hoverline">Independent Work <br> (UCSC/Brown)</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2"> Research Consultant </div>
-            <ul>
-              <li>
-                Developed and supported the development of several web applications for laboratory experiments in behavioral economics and finance.
-              </li>
-              <li>
-                Econometric analysis of data from behavioral experiments and Literature review of behavioral economics papers.
-              </li>
-              <li>
-                <b>Skills:</b> Behavioral and experimental economics, backend development, econometrics.
-              </li>
-              <li>
-                <b>Tools:</b> Python, HTML5, Javascript, Stata.
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span> January 2020 - Sep 2022 | Lima, Peru </span>
-          </div>
-        </div>
-
-        <!-- CIUP Experience -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://ciup.up.edu.pe/" target="_blank"><img alt="CIUP logo"
-                    src="/assets/img/work_logos/universidad del pacifico small logo.png" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://ciup.up.edu.pe/" target="_blank"
-                      class="teal-text hoverline">Universidad del Pacífico</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2"> Research Assistant </div>
-            <ul>
-              <li>
-                Supervision of behavioral economic projects and econometric analysis of data from randomized controlled trials on public economics. 
-              </li>
-              <li>
-                Developed scripts to remotely control the behavioral laboratory and technical support on backend development of 
-                web applications for lab projects.
-              </li>
-              <li>
-                <b>Skills:</b> Behavioral and experimental economics, backend development, bash scripting, econometrics.
-              </li>
-              <li>
-                <b>Tools:</b> Python, Bash, Ubuntu, HTML5, Javascript, Stata.
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span> January 2020 - Sep 2022 | Lima, Peru </span>
-          </div>
-        </div>
-
-        <!-- GMU Experience -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://ices.gmu.edu/about/about-the-center" target="_blank"><img alt="GMU logo"
-                    src="/assets/img/work_logos/gmu_logo.png" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://ices.gmu.edu/about/about-the-center" target="_blank"
-                      class="teal-text hoverline">George Mason University</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2"> Research Consultant </div>
-            <ul>
-              <li>
-                Co-authored project on evaluating the effects of automatizing collateral recovery on lending.
-              </li>
-              <li>
-                Developed the back and frontend of a web application for a lending experiment. 
-              </li>
-              <li>
-                <b>Skills:</b> Behavioral and experimental economics, full-stack development, econometrics.
-              </li>
-              <li>
-                <b>Tools:</b> Python, HTML5, Javascript, Stata.
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span> Jun 2019 - Dec 2020 | Virginia, United States / Lima, Peru </span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Portfolio</h3>
-      <div class="container flow-text">
-        <p>          
-          <b>Click</b> on any of the <b>cards</b> to access each project description and repository/further documentation. For additional 
-          research/coding projects, you can check the pinned repos in my <a href="https://github.com/mgutierrezc"><u>GitHub profile</u ></a>.
-        </p>
-      </div>
-      <div class="container">
-        <div class="row">
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Measuring gender biases from judicial cases" src="/assets/img/project_logos/biased justice.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Measuring gender biases from judicial cases<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Python pipeline to measure of judges' gender biases in Peru.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text"><small>Description</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>The pipeline creates a parsed corpus, word embeddings and gender slants at the judge level.</li>
-                  <li>A more thorough explanation can be found on the readme from the GitHub repo.</li>
-
-                  <li><b>Tools:</b> Python, Bash.</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for project" href="https://github.com/mgutierrezc/judicial_biases"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Facial Emotion Recognition (FER)" src="/assets/img/project_logos/fer_logo.jpg" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Facial Emotion Recognition (FER)<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  FER app for behavioral economics experiments
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Description</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>This is an oTree app that can use the user webcam to take snapshots and predict the dominant emotions displayed on the picture</li>
-                  <li>A more thorough explanation can be found on the readme from the GitHub repo.</li>
-
-                  <li><b>Tools:</b> Python, Javascript, HTML5.</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for project" href="https://github.com/mgutierrezc/otree_facial_coding"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Designing Algorithms to Combat Corruption" src="/assets/img/project_logos/algorithms and justice.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Designing Algorithms to Combat Corruption<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Using machine learning algorithms to timely detect corruption
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Description</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>We partnered with a Peruvian public entity in charge of analyzing corruption claims in the country</li>
-                  <li>A more thorough explanation can be found on the readme from the attached slides.</li>
-
-                  <li><b>Tools/Skills:</b> Project Management, Python, Stata.</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Summary Slides" href="https://docs.google.com/presentation/d/1nlmgKgO_P7S60HA21zw6WfCfVtpGjOQBYTvUwh9Z4KE/edit?usp=sharing" target="_blank" data-position="top"
-                    data-tooltip="View Slides"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        
-        </div>
-        <div class="row">
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Effects of Collateral Institutions on Lending" src="/assets/img/project_logos/collateral-lending.webp" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Effects of Collateral Institutions on Lending<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Paper on measuring the effect of an automated collateral system on lending
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Description</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Developed a system that automates the collection of collateral in loans </li>
-                  <li>Preliminary results show that people prefer a trust based system</li>
-                  
-                  <li>Published as fourth chapter in Maggie Lehr Ph.D. Thesis.</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="View Document" href="https://drive.google.com/file/d/101FaFs16uGai3VBFfyfvqWcDy8rKyZz5/view?usp=sharing" target="_blank" data-position="top"
-                    data-tooltip="View Document"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>  
-
-      </div>
-    </section>
-    <!-- Fifth Section: Skills -->
-    <section id="skills" class="section scrollspy">
-
-
-      <h3 class="page-title white-text teal">Skills</h3>
-      <div class="container">
-        <!-- Languages -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Programming/Command Languages</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tools_logos/python-logo.png" class="responsive-img"/>Python - Advanced
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tools_logos/bash-logo.png" class="responsive-img"/>Bash - Proficient
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tools_logos/html5-logo.png" class="responsive-img"/>HTML5 - Proficient
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tools_logos/javascript-logo.png" class="responsive-img"/>JavaScript - Basic
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tools_logos/postgresql-logo.png" class="responsive-img"/>PSQL - Basic
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Computational Tools and Statistical Packages -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Computational Tools</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tools_logos/ubuntu-logo.png" class="responsive-img" />Ubuntu
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tools_logos/git-logo.png" class="responsive-img" />Git
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tools_logos/aws-logo.png" class="responsive-img" />AWS
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tools_logos/google-cloud-logo.jpg" class="responsive-img" />Google Cloud APIs
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tools_logos/latex-logo.png" class="responsive-img" />LaTex
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tools_logos/stata-logo.png" class="responsive-img" />Stata
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mainly Used/Core Python Libraries -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Core Python Libraries</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tools_logos/nltk-logo.png" class="responsive-img" />Nltk
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tools_logos/pandas-logo.png" class="responsive-img" />Pandas
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tools_logos/numpy-logo.png" class="responsive-img" />Numpy
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tools_logos/otree-logo.png" class="responsive-img" />Otree
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tools_logos/scrapy-logo.png" class="responsive-img" />Scrapy
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Languages -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Languages</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/languages_logos/spanish-logo.webp" class="responsive-img" />Spanish - Native
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/languages_logos/english-logo.png" class="responsive-img" />English - Fluent
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/languages_logos/german-logo.webp" class="responsive-img" />German - Basic
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-    <!-- Seventh Section: Education -->
-    <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
-      <div class="container">
-        <div class="row">
-          <!-- Education -->
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://www.pucp.edu.pe/" target="_blank" class="teal-text hoverline">Pontificia Universidad Católica del Perú</a></span>
-                </p>
-                <p class="brown-text">March 2014 - December 2019 (Lima, Peru)</p>
-                <p>
-                  <b>Major: </b>Economics      
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://www.coursera.org/learn/python-machine-learning" target="_blank" class="teal-text hoverline">University of Michigan - Coursera
-                      </a></span>
-                </p>
-                <p class="brown-text"> 2020 (Online)</p>
-                <p>
-                  <b>Specialization: </b> Applied Machine Learning in Python
-                  <br>
-                </p>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text teal">Contact</h3>
-      <div class="container">
-        <p>
-          <a aria-label="Email Marco" href="mailto:mg4558@columbia.edu" target="_blank" data-position="top"
-            data-tooltip="Email Marco" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email Varad" href="mailto:mg4558@columbia.edu"
-              class="hoverline">mg4558@columbia.edu</a></a>
-        </p>
-        <p>
-          <a aria-label="View Marco on GitHub" href="https://github.com/mgutierrezc" target="_blank"
-            data-position="top" data-tooltip="View Marco on GitHub"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-              aria-label="Marco on Github" href="https://github.com/mgutierrezc" class="hoverline"
-              target="_blank">github.com/mgutierrezc</a></a>
-        </p>
-        <p>
-          <a aria-label="View Marco on LinkedIn" href="https://pe.linkedin.com/in/mgutierrez224" target="_blank"
-            data-position="top" data-tooltip="View Marco on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-linkedin"></i><a aria-label="Marco on LinkedIn" href="https://pe.linkedin.com/in/mgutierrez224"
-              class="hoverline" target="_blank">linkedin.com/in/mgutierrez224</a></a>
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <!-- typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["<span style='color:gray'>Researcher</span>", "<span style='color:gray'>Behavioral and Development Economist</span>", "<span style='color:gray'>Data Scientist</span>"],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-    });
-  </script>
-
-
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-  <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
-  </script>
 </body>
-
 </html>
+
