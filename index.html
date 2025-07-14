@@ -175,8 +175,10 @@
           white-space: nowrap;
         }
         .job-title {
-          display: inline-flex;
+          display: flex;
+          flex-wrap: nowrap; 
           white-space: nowrap;
+          align-items: baseline; 
         }
         
     </style>
@@ -207,9 +209,7 @@
                 <img src="assets\img\work_logos\columbia university small logo.png" alt="Experience 1">
                 <div>
                     <div class="job-title">
-                        <span class="job-title-main">
-                            Columbia University, Pre-Doctoral Fellow
-                        </span>
+                        Columbia University, Pre-Doctoral Fellow
                         <span class="job-title-alumni">
                             (Alumni <a href="https://econ.columbia.edu/per/pre-doc-research-staff/pre-doc-alumni/">here</a>)
                         </span>
